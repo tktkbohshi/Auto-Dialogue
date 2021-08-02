@@ -5,8 +5,8 @@ For this repository, you need to a pretrained model of transformers (a library f
 ## Usage  
 1. add some directories to `PYTHONPATH`  
 ``` 
-export PYTHONPATH="<YOUR PATH>:$PYTHONPATH"
-export PYTHONPATH="<YOUR PATH>:$PYTHONPATH"
+export PYTHONPATH="<YOUR PATH>/components:$PYTHONPATH"
+export PYTHONPATH="<YOUR PATH>/utils:$PYTHONPATH"
 ```
 
 2. prepare pretrained models
