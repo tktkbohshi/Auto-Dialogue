@@ -13,3 +13,5 @@ export PYTHONPATH="<YOUR PATH>/utils:$PYTHONPATH"
 
 3. write some settings to setting.yml  
 
+4. implement `python main.py`
+
