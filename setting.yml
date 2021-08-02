@@ -1,0 +1,23 @@
+General:
+  dialogue_turn: 15
+  start_token: ""
+  end_token: ""
+  who_start: "system" # who start talking
+  canditates_data_path: "./data/test_utter.npy" # only for response_selection
+
+System:
+  model_path: "./models/bert/system" # path to the model (transformers only)
+  model_type: "response_selection" #response_selection or generative
+  use_context: True
+  context_type: "turn" # turn or token
+  context_length: 2
+  action_list: "qa:qw:pa:na:oa:op:io:su" # only for modelType==response_selection
+  isManual: False # if True, you can input sentence manually
+
+User: 
+  model_path: "./models/bert/user" # path to the model (transformers only)
+  model_type: "response_selection" # response_selection or generative
+  use_context: True
+  context_type: "turn" # turn or token
+  context_length: 2
+  isManual: False # if True, you can input sentence manually
