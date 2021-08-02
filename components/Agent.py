@@ -22,6 +22,9 @@ class Agent():
         if self.modelType=="response_selection":
             self.canditates = canditates
 
+        self.isManual = isManual
+
+        # for Transformers
         self.tokenizer = BertJapaneseTokenizer.from_pretrained(model_path)
         self.config = BertConfig.from_pretrained(model_path)
         self.model = BertForNextSentencePrediction.from_pretrained(model_path)
